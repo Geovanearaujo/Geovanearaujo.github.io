@@ -1,0 +1,22 @@
+body {
+   width: 95%;
+   max-width:auto;
+   height:auto;
+   margin:center;
+   background:url(bg3.jpg);
+   font-family: sans-serif;
+   line-height:1.5;center;
+   color:#ffff;
+   style="overflow:scroll; automation;
+ }
+main {
+         background:#070B19;
+         margin: 20px;
+         padding: 5px 40px;
+         border: border-radius;25px;
+    }
+ @media only screen and (min-width: 1150px) {
+.media{
+width:1150px;
+height:400px;
+}

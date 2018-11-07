@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ROBÓTICA</title>
+  <link rel= "stylesheet" href="application.css">
+  <link rel= "stylesheet" href= "sans serif">
+</head>
+<body>
+  <script>
+  var msg = 'Olá padrão';
+    function alerta(mensagem){
+      //alerta(msg);
+    msglocal = mensagem;
+  }
+    alerta('olá humanos');
+    alert(msglocal);
+    //alerta();
+  </script>
+
+
+  <script>
+  let d = new Date();
+  document.body.innerHTML = "<h1> horário de acesso:  " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+  "</h1>"
+  </script>
+
+
+<form action="">
+  <fieldset>
+    <legend>Formulario de Cadastro</legend>
+
+    <div class="form-group">
+      <label for="email" >Email:</label>
+      <input type="email" onblur="validarEmail()" onfocus="redefinirMsg()" id="email"/>
+      <span id="error-email"></span>
+    </div>
+    <input type="submit" />
+
+  </fieldset>
+</form>
+
+<script>
+function validarEmail(){
+  var email = document.querySelector('#email');
+  var error = document.querySelector('#error-email');
+
+  if(!email.checkValidity()){
+    error.innerHTML = "Email invalido";
+  }
+
+}
+
+function redefinirMsg(){
+  var error = document.querySelector('#error-email');
+  if (error.innerHTML == "Email invalido"){
+    error.innerHTML = "";
+  }
+}
+
+</script>
+
+<main>
+    <a href="https://github.com/Geovanearaujo?tab=repositories">
+    <img src="robo.png" alt="logo">
+  </a>
+    <h1 class "robot-name">|Olá Humanos|</h1>
+    <h2 align="center" class "headline"> HISTÓRIA DA ROBÓTICA </h2>
+
+<p align="justify">
+O conceito de robot data dos inícios da história, quando os mitos faziam referência a mecanismos que ganhavam vida.
+
+Começando na civilização grega, os primeiros modelos de robot que encontramos eram figuras com aparência humana e/ou animal, que usavam sistemas de pesos e bombas pneumáticas.
+
+As civilizações daquele tempo não tinham nenhuma necessidade prática ou económica, nem nenhum sistema complexo de produtividade que exigisse a existência deste tipo de aparelhos.
+
+Cientistas árabes acrescentaram um importante e novo conceito à ideia tradicional de robots, concentrando as suas pesquisas no objectivo de atribuir funções aos robots que fossem ao encontro das necessidades humanas. A fusão da ideia de robots e a sua possível utilização prática marcou o início de uma nova era.
+
+Leonardo DaVinci abriu caminho a uma maior aproximação ao complexo mundo dos robots. DaVinci desenvolveu uma extensiva investigação no domínio da anatomia humana que permitiu o alargamento de conhecimentos para a criação de articulações mecânicas. Como resultado deste estudo desenvolvido, surgiram diversos exemplares de bonecos que moviam as mãos, os olhos e as pernas, e que conseguiam realizar acções simples como escrever ou tocar alguns instrumentos.
+
+Nikola Tesla, cientista na área da robótica, emigrou da Croácia para a América em 1800 e a propósito do grande desenvolvimento dos robots e das grandes expectativas criadas em redor destes, afirmou: "I treated the whole field broadly, not limiting myself to mechanics controlled from a distance, but to machines possessed of their own intelligence. Since that time had advanced greatly in the evolution of the invention and think that the time is not distant when I shall show an automation which left to itself, will act as though possessed of reason and without any willful control from the outside." A palavra robot foi introduzida pelo dramaturgo Karel Capek. Esta palavra surgiu numa das suas mais prestigiadas peças, R.U.R, e os robots que nela intervieram não eram mecanizados.
+
+O termo robótica refere-se ao estudo e à utilização de robots, e foi pela primeira vez enunciado pelo cientista e escritor Isaac Asimov, em 1942, numa pequena história intitulada "Runaround". Asimov também publicou uma compilação de pequenas histórias, em 1950, intitulada "I Robot". Este autor propôs a existência de três leis aplicáveis à robótica, às quais acrescentou, mais tarde, a lei zero. As leis propostas são, actualmente, entendidas numa perspectiva puramente ficcional, pois no tempo em que foram escritas não se imaginava o desenvolvimento vertiginoso que iria ocorrer nesta área. Os robots, tal como os conhecemos hoje, não procuram ser verdadeiras imitações humanas, nem pretendem ser outras formas de vida.
+
+O desenvolvimento inicial dos robots baseou-se no esforço de automatizar as operações industriais. Este esforço começou no século XVIII, na indústria têxtil, com o aparecimento dos primeiros teares mecânicos. Com o contínuo progresso da revolução industrial, as fábricas procuraram equipar-se com máquinas capazes de realizar e reproduzir, automaticamente, determinadas tarefas. No entanto, a criação de verdadeiros robots não foi possível até à invenção do computador em 1940, e dos sucessivos aperfeiçoamentos das partes que o constituem, nomeadamente, em relação à dimensão.
+
+O primeiro robot industrial foi o Unimates, desenvolvido por George Devol e Joe Engleberger, no final da década de 50, início da década de 60. As primeiras patentes de máquinas transportadoras pertenceram a Devol, máquinas essas que eram robots primitivos que removiam objetos de um local para outro. Engleberger, por sua vez, pela construção do primeiro robot comercial foi apelidado de "pai da robótica". Outro dos primeiros computadores foi o modelo experimental chamado Shakey, desenhado para pesquisas em Standford, no final da década de 60.
+
+Atualmente, robots como o Shakey continuam a ser utilizados, particularmente com intuitos de pesquisa, mas, no futuro, estes computadores podem vir a ser utilizados como veículos de reconversão ambiental. </p>
+
+
+<h1 align="center" class="headline2"> Reprodução do nicho de animais, em robos:</h1>
+<div class="media">
+ <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/x8nYbSRoCZM"frameborder="0" allowfullscreen>; </iframe>
+   </div>
+</main>
+</body>
+  </html>
