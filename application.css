@@ -10,7 +10,7 @@ body {
    style="overflow:scroll; automation;
  }
 main {
-         background-color: blue
+         background-color: hsl(hue, saturation, lightness)
          margin: 20px;
          padding: 5px 40px;
          border: border-radius;25px;
